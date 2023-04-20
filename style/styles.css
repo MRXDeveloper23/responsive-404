@@ -1,34 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  max-width: 1440px;
+  margin: auto;
+}
 body {
-  font-family: "Poppins", sans-serif;
+  padding: 20px 24px;
 }
-
-ul {
-  padding-left: 24px;
+.not-found > h1 {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
 }
-
-li {
-  margin-bottom: 8px;
+.not-found > div {
+  display: flex;
+  flex-direction: column;
 }
-
-.welcome {
-  max-width: 800px;
-  margin: 0 auto;
+.not-found span {
+  display: flex;
 }
-
-.welcome-text {
-  margin-top: 30vh;
-  font-weight: 500;
+.not-found span > img {
+  padding: 40px 20px;
+  width: 100%;
 }
-
-.welcome-text p {
-  font-size: 1rem;
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  text-align: left;
+}
+.inner-content h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 48px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 30px;
+  line-height: 71px;
+}
+.inner-content p {
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
   font-weight: 400;
+  max-width: 382px;
+  margin-bottom: 64px;
+}
+.inner-content button {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  padding: 24px 43px;
+  cursor: pointer;
 }
 
-.welcome-text h1 {
-  font-size: 1.5rem;
-}
-
-.welcome-text a {
-  color: #f7542e;
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: 40px 77px;
+  }
+  .not-found > div {
+    margin-top: 200px;
+    flex-direction: row;
+    gap: 118px;
+  }
+  .not-found span > img {
+    padding: 20px;
+  }
+  .inner-content h1 {
+    width: 588px;
+    font-size: 64px;
+    line-height: 94px;
+  }
+  .inner-content p {
+    font-size: 24px;
+  }
 }
